@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - LocationGuesser</title>
+  <style>
+    :root {
+      --bg-color: #0B0E1B;
+      --card-bg: #141829;
+      --card-border: #222943;
+      --text-primary: #F0F3FF;
+      --text-secondary: #9AA3C2;
+      --accent-cyan: #00E5FF;
+      --accent-violet: #6C63FF;
+      --accent-green: #38EF7D;
+      --code-bg: #1B2138;
+      --line-height: 1.68;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      line-height: var(--line-height);
+      padding: 32px 16px;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 40px 36px;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 16px 8px;
+      }
+      .container {
+        padding: 24px 18px;
+        border-radius: 12px;
+      }
+    }
+
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(108, 99, 255, 0.15);
+      border: 1px solid rgba(108, 99, 255, 0.4);
+      color: #A5A0FF;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    h1 .accent {
+      color: var(--accent-cyan);
+    }
+
+    .last-updated {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .intro-callout {
+      background: rgba(0, 229, 255, 0.06);
+      border-left: 4px solid var(--accent-cyan);
+      padding: 16px 20px;
+      border-radius: 0 10px 10px 0;
+      margin-bottom: 32px;
+      color: #E2E8F0;
+      font-size: 15px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-top: 36px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 18px;
+      background: var(--accent-cyan);
+      border-radius: 2px;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #E0E7FF;
+      margin-top: 18px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+
+    p strong {
+      color: var(--text-primary);
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 18px;
+      color: var(--text-secondary);
+      font-size: 15px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li strong {
+      color: var(--text-primary);
+    }
+
+    .badge-no {
+      background: rgba(56, 239, 125, 0.15);
+      color: var(--accent-green);
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    .service-card {
+      background: #191E33;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin: 16px 0;
+    }
+
+    .service-title {
+      font-weight: 700;
+      color: #FFFFFF;
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #70EFFF;
+      text-decoration: underline;
+    }
+
+    .contact-box {
+      background: #1A1F36;
+      border: 1px dashed var(--accent-violet);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 24px;
+    }
+
+    .email-highlight {
+      display: inline-block;
+      background: var(--code-bg);
+      color: var(--accent-cyan);
+      font-family: monospace;
+      font-size: 15px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px solid var(--card-border);
+      margin-top: 6px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid var(--card-border);
+      color: #6C7693;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header-badge">Legal &amp; Privacy Information</div>
+    <h1>Privacy Policy for <span class="accent">LocationGuesser</span></h1>
+    <div class="last-updated">Last Updated: September 20, 2026 &bull; Effective Date: September 20, 2026</div>
+
+    <div class="intro-callout">
+      <strong>Transparency Summary:</strong> LocationGuesser is an offline-oriented geographic trivia game. We do not require accounts, we do not track your real-time GPS physical location, and we do not collect, sell, or monetize any personal identification information (PII).
+    </div>
+
+    <h2>1. Overview and Purpose</h2>
+    <p>
+      This Privacy Policy describes how <strong>LocationGuesser</strong> ("the Application", "we", "our", or "us") handles information when you use our mobile application available on Google Play. LocationGuesser is designed to test players' geographic deduction skills by presenting panoramic Street View imagery of world locations and allowing players to guess where that image was taken by placing a pin on an interactive map.
+    </p>
+
+    <h2>2. Information We Collect (and Do Not Collect)</h2>
+    <p>
+      We believe in absolute data minimization. LocationGuesser does not collect any personal information beyond what is strictly necessary to deliver the game's core interactive experience:
+    </p>
+
+    <ul>
+      <li>
+        <strong>Personal Identifiable Information (PII) &mdash; <span class="badge-no">NOT COLLECTED</span>:</strong>
+        We do not collect names, email addresses, phone numbers, postal addresses, contacts, passwords, or personal identity markers. You do not need to create an account or sign in to play.
+      </li>
+      <li>
+        <strong>Your Device's Physical GPS Location &mdash; <span class="badge-no">NOT ACCESSED</span>:</strong>
+        The Application does <em>not</em> request, track, or access your real-world GPS coordinates or background device location. The only location coordinates processed are the game's pre-configured landmark locations and the virtual coordinate points you voluntarily tap on the guess map.
+      </li>
+      <li>
+        <strong>Session Gameplay State:</strong>
+        Active game state (such as the current round number, running score, and the latitude/longitude of your guess pins) is maintained strictly in temporary device memory (RAM) while the app is active. When you restart the game or close the application, this transient data is cleared.
+      </li>
+    </ul>
+
+    <h2>3. How Gameplay Coordinates Are Used</h2>
+    <p>LocationGuesser processes two types of geographic coordinates strictly to support gameplay functionality:</p>
+    <ul>
+      <li>
+        <strong>Curated Target Coordinates:</strong> Pre-defined latitude and longitude coordinates of iconic worldwide landmarks are used to request panorama imagery from the Google Street View Static API so you can view visual clues.
+      </li>
+      <li>
+        <strong>User Guess Pin Coordinates:</strong> When you tap on the map modal to submit your guess, that specific map coordinate is used locally by our on-device algorithm (the Haversine formula) to calculate the distance between your guess and the target landmark in kilometers and determine your score. This calculation runs locally on your device.
+      </li>
+    </ul>
+
+    <h2>4. Third-Party Services and APIs</h2>
+    <p>
+      The Application incorporates third-party developer libraries and cloud services to display maps, render street panoramas, and support app stability. These providers may receive certain technical data (such as your IP address and standard device metadata) as necessary to respond to network requests:
+    </p>
+
+    <div class="service-card">
+      <div class="service-title">Google Maps Platform</div>
+      <p>
+        LocationGuesser uses Google Maps Platform APIs, specifically:
+      </p>
+      <ul>
+        <li><strong>Google Maps SDK for Android / Maps JavaScript API:</strong> Renders the interactive map interface where you view continents, zoom in/out, and tap to place your guess pin.</li>
+        <li><strong>Google Street View Static API:</strong> Retrieves street-level panoramic images corresponding to the curated landmark rounds.</li>
+      </ul>
+      <p>
+        These services are governed by Google's Terms of Service and Privacy Policy. When requests are made to fetch map tiles or Street View imagery, Google may log standard request information in accordance with their privacy practices.
+      </p>
+      <p>
+        Learn more: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://cloud.google.com/maps-platform/terms" target="_blank" rel="noopener noreferrer">Google Maps Platform Terms of Service</a>.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-title">Firebase &amp; Expo Framework</div>
+      <p>
+        The Application is built using the Expo (React Native) ecosystem and may utilize core platform services (such as Firebase / Expo runtime tooling) for basic error monitoring, dependency resolution, and crash reporting. Any technical diagnostics collected by these frameworks are pseudonymous and used exclusively to diagnose application crashes and ensure compatibility across Android devices.
+      </p>
+      <p>
+        Learn more: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy and Security</a> and <a href="https://expo.dev/privacy" target="_blank" rel="noopener noreferrer">Expo Privacy Policy</a>.
+      </p>
+    </div>
+
+    <h2>5. Data Retention and Storage</h2>
+    <p>
+      LocationGuesser does not operate a remote server or user database to store your personal details. Gameplay progress, scores, and round history exist solely within your local session memory. Because we do not store personal data on remote developer servers, there is no personal data retained or shared with marketing companies, data brokers, or advertising networks.
+    </p>
+
+    <h2>6. User Rights and Data Control</h2>
+    <p>
+      Under applicable privacy laws (including GDPR, CCPA/CPRA, and Google Play User Data policies), you have the right to control your data. Because LocationGuesser does not collect or store personal identifiers:
+    </p>
+    <ul>
+      <li>You can clear all local app cache and temporary data at any time via your Android device settings: <strong>Settings &rarr; Apps &rarr; LocationGuesser &rarr; Storage &amp; cache &rarr; Clear Storage</strong>.</li>
+      <li>You can remove all associated local files immediately by uninstalling the app.</li>
+    </ul>
+
+    <h2>7. Children's Privacy</h2>
+    <p>
+      LocationGuesser is a general audience educational trivia game. We do not knowingly collect or solicit personal information from children under the age of 13 (or under the age of 16 in certain jurisdictions). If you believe that a child has provided us with personal information, please contact us immediately so we can take appropriate measures.
+    </p>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>
+      We may occasionally update this Privacy Policy to reflect changes in our gameplay features, API requirements, or relevant legal regulations. Any revisions will be reflected on this page with an updated "Last Updated" date.
+    </p>
+
+    <h2>9. Contact Us</h2>
+    <div class="contact-box">
+      <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or the data practices of LocationGuesser, please contact our support team at:</p>
+      <div class="email-highlight">mdy2824@gmail.com</div>
+      <p style="margin-top: 12px; font-size: 13px; color: var(--text-secondary);">
+        
+      </p>
+    </div>
+
+    <footer>
+      &copy; 2026 LocationGuesser. All rights reserved. Built for Google Play Store publication.
+    </footer>
+  </div>
+
+</body>
+</html>
