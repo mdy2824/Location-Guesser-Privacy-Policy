@@ -45,13 +45,8 @@
     }
 
     @media (max-width: 600px) {
-      body {
-        padding: 16px 8px;
-      }
-      .container {
-        padding: 24px 18px;
-        border-radius: 12px;
-      }
+      body { padding: 16px 8px; }
+      .container { padding: 24px 18px; border-radius: 12px; }
     }
 
     .header-badge {
@@ -78,9 +73,7 @@
       margin-bottom: 8px;
     }
 
-    h1 .accent {
-      color: var(--accent-cyan);
-    }
+    h1 .accent { color: var(--accent-cyan); }
 
     .last-updated {
       color: var(--text-secondary);
@@ -134,9 +127,7 @@
       font-size: 15px;
     }
 
-    p strong {
-      color: var(--text-primary);
-    }
+    p strong { color: var(--text-primary); }
 
     ul {
       margin-left: 20px;
@@ -145,13 +136,8 @@
       font-size: 15px;
     }
 
-    li {
-      margin-bottom: 8px;
-    }
-
-    li strong {
-      color: var(--text-primary);
-    }
+    li { margin-bottom: 8px; }
+    li strong { color: var(--text-primary); }
 
     .badge-no {
       background: rgba(56, 239, 125, 0.15);
@@ -192,10 +178,7 @@
       transition: color 0.2s ease;
     }
 
-    a:hover {
-      color: #70EFFF;
-      text-decoration: underline;
-    }
+    a:hover { color: #70EFFF; text-decoration: underline; }
 
     .contact-box {
       background: #1A1F36;
@@ -232,65 +215,66 @@
   <div class="container">
     <div class="header-badge">Legal &amp; Privacy Information</div>
     <h1>Privacy Policy for <span class="accent">LocationGuesser</span></h1>
-    <div class="last-updated">Last Updated: September 20, 2026 &bull; Effective Date: September 20, 2026</div>
+    <div class="last-updated">Last Updated: September 21, 2026 &bull; Effective Date: September 21, 2026</div>
 
     <div class="intro-callout">
-      <strong>Transparency Summary:</strong> LocationGuesser is a geographic trivia game. You do not need an account to play. If you choose to submit a score to our public leaderboard, you provide a username, which is stored and displayed publicly within the app. We do not track your real-time GPS physical location, and we do not sell or monetize any personal information.
+      <strong>Transparency Summary:</strong> LocationGuesser does not require a traditional account, email, or password. On first launch, the app generates a random device identifier and asks you to choose a username, which is required to play and is displayed publicly on the leaderboard alongside your score. We do not track your real-time GPS physical location, and we do not sell or monetize any personal information.
     </div>
 
     <h2>1. Overview and Purpose</h2>
     <p>
-      This Privacy Policy describes how <strong>LocationGuesser</strong> ("the Application", "we", "our", or "us") handles information when you use our mobile application available on Google Play. LocationGuesser is designed to test players' geographic deduction skills by presenting panoramic Street View imagery of world locations and allowing players to guess where that image was taken by placing a pin on an interactive map.
+      This Privacy Policy describes how <strong>LocationGuesser</strong> ("the Application", "we", "our", or "us") handles information when you use our mobile application available on Google Play. LocationGuesser is a geography game that tests players' deduction skills through Street View panorama location-guessing rounds and image-based puzzles, with scores tracked on a public leaderboard.
     </p>
 
     <h2>2. Information We Collect</h2>
     <p>
-      We believe in data minimization. LocationGuesser does not collect any personal information beyond what is necessary to deliver the game's core experience and the optional leaderboard feature:
+      We collect the minimum information necessary to provide the app's core features, including the persistent leaderboard:
     </p>
 
     <ul>
       <li>
-        <strong>Personal Identifiable Information (PII) &mdash; <span class="badge-no">NOT REQUIRED TO PLAY</span>:</strong>
-        We do not collect names, email addresses, phone numbers, postal addresses, contacts, passwords, or personal identity markers. You do not need to create an account or sign in to play the core game.
+        <strong>Device Identifier &mdash; <span class="badge-yes">COLLECTED</span>:</strong>
+        On first launch, the app generates a random, app-specific device identifier (a UUID) and stores it on your device. This identifier is used solely to recognize your device on return visits so your username and score persist across sessions. It is not derived from your phone number, advertising ID, or any other identifier tied to your real-world identity, and it cannot be used to identify you personally on its own.
       </li>
       <li>
-        <strong>Username (Optional) &mdash; <span class="badge-yes">COLLECTED IF SUBMITTED</span>:</strong>
-        If you choose to submit your score to the leaderboard, you provide a username. This username, along with your score, is stored in our database and is publicly visible to all users of the app within the leaderboard feature. Submitting a score is entirely optional — you can play the full game without ever entering a username.
+        <strong>Username &mdash; <span class="badge-yes">REQUIRED TO PLAY</span>:</strong>
+        On first launch, you are asked to choose a username. A username is required to play the game and track your score. This username is stored in our database, linked to your device identifier, and is publicly visible to all users of the app on the leaderboard. You can change your username at any time from the Home screen. Please do not use a username that reveals personal information you do not want made public.
+      </li>
+      <li>
+        <strong>Personal Identifiable Information (PII) &mdash; <span class="badge-no">NOT COLLECTED</span>:</strong>
+        We do not collect your real name, email address, phone number, postal address, contacts, or password. There is no account creation, login, or sign-in of any kind &mdash; only the device identifier and username described above.
       </li>
       <li>
         <strong>Your Device's Physical GPS Location &mdash; <span class="badge-no">NOT ACCESSED</span>:</strong>
-        The Application does <em>not</em> request, track, or access your real-world GPS coordinates or background device location. The only location coordinates processed are the game's pre-configured landmark locations and the virtual coordinate points you voluntarily tap on the guess map.
-      </li>
-      <li>
-        <strong>Session Gameplay State:</strong>
-        Active game state (such as the current round number, running score, and the latitude/longitude of your guess pins) is maintained in temporary device memory (RAM) while the app is active and is cleared when you close the app. This is separate from a submitted leaderboard entry, which is stored remotely (see Section 5).
+        The Application does <em>not</em> request, track, or access your real-world GPS coordinates or background device location. The only location coordinates processed are the game's pre-configured location data and the virtual coordinate points you voluntarily tap on the guess map.
       </li>
     </ul>
 
-    <h2>3. How Gameplay Coordinates and Scores Are Used</h2>
-    <p>LocationGuesser processes geographic coordinates and score data to support gameplay and the leaderboard:</p>
+    <h2>3. How Gameplay Data and Scores Are Used</h2>
+    <p>LocationGuesser processes gameplay data to support the game modes and the persistent leaderboard:</p>
     <ul>
       <li>
         <strong>Curated Target Coordinates:</strong> Pre-defined latitude and longitude coordinates of locations are stored in our database and used to request panorama imagery from the Google Street View Static API and Maps JavaScript API so you can view visual clues.
       </li>
       <li>
-        <strong>User Guess Pin Coordinates:</strong> When you tap on the map to submit your guess, that specific coordinate is used locally by our on-device algorithm (the Haversine formula) to calculate the distance between your guess and the target location in kilometers and determine your score. This calculation runs locally on your device.
+        <strong>User Guess Pin Coordinates:</strong> When you tap on the map to submit your guess, that coordinate is used locally on your device (via the Haversine formula) to calculate the distance between your guess and the target location and determine your score for that round.
       </li>
       <li>
-        <strong>Leaderboard Submission:</strong> If you choose to submit your score, your username, final score, and a submission timestamp are sent to and stored in our Firebase/Firestore database, and displayed publicly to other players on the leaderboard.
+        <strong>Puzzle Images:</strong> The image-puzzle feature fetches an image from our database to display as a jigsaw-style puzzle. Solving a puzzle awards points in the same way as a guessing round.
+      </li>
+      <li>
+        <strong>Cumulative Score:</strong> Points earned from both the location-guessing game and the puzzle feature are added to a single running total score tied to your device identifier and username, stored in our Firebase/Firestore database. This total score is what is displayed on the public leaderboard, ranked against other players.
       </li>
     </ul>
 
     <h2>4. Third-Party Services and APIs</h2>
     <p>
-      The Application incorporates third-party developer libraries and cloud services to display maps, render street panoramas, store leaderboard data, and support app stability. These providers may receive certain technical data (such as your IP address and standard device metadata) as necessary to respond to network requests:
+      The Application incorporates third-party developer libraries and cloud services to display maps, render street panoramas, store gameplay and leaderboard data, and support app stability. These providers may receive certain technical data (such as your IP address and standard device metadata) as necessary to respond to network requests:
     </p>
 
     <div class="service-card">
       <div class="service-title">Google Maps Platform</div>
-      <p>
-        LocationGuesser uses Google Maps Platform APIs, specifically:
-      </p>
+      <p>LocationGuesser uses Google Maps Platform APIs, specifically:</p>
       <ul>
         <li><strong>Google Maps SDK for Android / Maps JavaScript API:</strong> Renders the interactive map interface where you view continents, zoom in/out, and tap to place your guess pin, and powers the interactive 360&deg; Street View panorama.</li>
         <li><strong>Google Street View Static API:</strong> Retrieves street-level panoramic images corresponding to the curated location rounds.</li>
@@ -306,7 +290,7 @@
     <div class="service-card">
       <div class="service-title">Firebase &amp; Expo Framework</div>
       <p>
-        The Application uses <strong>Firebase Firestore</strong> as a database to store leaderboard entries (usernames, scores, and timestamps) that you voluntarily submit. This data is used solely to power the public leaderboard feature.
+        The Application uses <strong>Firebase Firestore</strong> as a database to store your device identifier, username, cumulative total score, and puzzle image data. This data powers the persistent leaderboard and cumulative scoring features described above.
       </p>
       <p>
         The Application is also built using the Expo (React Native) ecosystem and may utilize core platform services (such as Expo runtime tooling) for basic error monitoring, dependency resolution, and crash reporting. Any technical diagnostics collected by these frameworks are pseudonymous and used exclusively to diagnose application crashes and ensure compatibility across Android devices.
@@ -318,7 +302,7 @@
 
     <h2>5. Data Retention and Storage</h2>
     <p>
-      Gameplay progress during an active game session (current round, running score, guess pin coordinates) exists only in temporary device memory and is cleared when you close the application. However, if you choose to submit a score to the leaderboard, your username, score, and submission timestamp are stored remotely in our Firebase/Firestore database and remain publicly visible on the leaderboard until removed. We do not sell this data, share it with advertising networks, or use it for marketing purposes. If you would like a previously submitted leaderboard entry removed, please contact us using the details in Section 9.
+      Your device identifier, username, and cumulative total score are stored remotely in our Firebase/Firestore database for as long as you have the app installed, so that your progress and leaderboard position persist across sessions. This data remains publicly visible on the leaderboard (username and score only &mdash; never your device identifier itself) until removed. We do not sell this data, share it with advertising networks, or use it for marketing purposes. If you would like your data removed, please contact us using the details in Section 9, and provide your username so we can locate and delete the correct record.
     </p>
 
     <h2>6. User Rights and Data Control</h2>
@@ -326,15 +310,15 @@
       Under applicable privacy laws (including GDPR, CCPA/CPRA, and Google Play User Data policies), you have the right to control your data.
     </p>
     <ul>
-      <li>You can play LocationGuesser fully without ever submitting a username or score, in which case no personal data is collected or stored remotely.</li>
-      <li>If you have submitted a leaderboard entry and would like it removed or corrected, contact us using the details in Section 9 and we will remove it promptly.</li>
-      <li>You can clear all local app cache and temporary data at any time via your Android device settings: <strong>Settings &rarr; Apps &rarr; LocationGuesser &rarr; Storage &amp; cache &rarr; Clear Storage</strong>.</li>
-      <li>You can remove all associated local files immediately by uninstalling the app.</li>
+      <li>You can change your username at any time from the Home screen; this updates your existing record rather than creating a new one.</li>
+      <li>You can request removal of your device identifier, username, and score data at any time by contacting us using the details in Section 9.</li>
+      <li>Uninstalling the app removes the locally stored device identifier from your device, but does not automatically delete your record from our remote database &mdash; if you reinstall the app, a new device identifier will be generated and a new record created. Contact us if you would like your prior record deleted.</li>
+      <li>You can clear local app cache at any time via your Android device settings: <strong>Settings &rarr; Apps &rarr; LocationGuesser &rarr; Storage &amp; cache &rarr; Clear Storage</strong> (note: this will reset your local device identifier, causing a new profile to be created on next launch).</li>
     </ul>
 
     <h2>7. Children's Privacy</h2>
     <p>
-      LocationGuesser is a general audience educational trivia game. We do not knowingly collect or solicit personal information from children under the age of 13 (or under the age of 16 in certain jurisdictions). If you believe that a child has provided us with personal information, please contact us immediately so we can take appropriate measures.
+      LocationGuesser is a general audience educational trivia game. We do not knowingly collect or solicit personal information from children under the age of 13 (or under the age of 16 in certain jurisdictions). The username feature should not be used to enter real names or other identifying information. If you believe a child has provided personal information through this app, please contact us immediately so we can take appropriate measures.
     </p>
 
     <h2>8. Changes to This Privacy Policy</h2>
@@ -344,7 +328,7 @@
 
     <h2>9. Contact Us</h2>
     <div class="contact-box">
-      <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or the data practices of LocationGuesser — including requesting removal of a leaderboard entry — please contact our support team at:</p>
+      <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or the data practices of LocationGuesser — including requesting removal of your username, score, or device record — please contact our support team at:</p>
       <div class="email-highlight">mdy2824@gmail.com</div>
     </div>
 
